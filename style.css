@@ -1,0 +1,290 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins',sans-serif;
+      color: #FFD700;
+}
+#Accueil{
+      display: none;
+}
+nav{
+      display: flex;
+      position: relative;
+      margin-right: 20px;
+      flex-wrap: wrap;
+}
+nav p{
+      margin-left: 10px;
+}
+nav a{
+      text-decoration: none;
+      font-weight: bolder;
+}
+nav a:hover{
+      text-decoration: underline;
+      text-decoration-color: #FFD700;
+}
+html{
+      background-color: black;
+}
+body{
+      background-color:#0D2847;
+      position: absolute;
+}
+h2{
+      margin-bottom: 15px;
+      font-weight: bolder;
+      color: #FFD700;
+}
+p{
+      color: white;
+}
+#folio{
+      color: white;
+}
+#Ma_Photo{
+      opacity: 0.9;
+      border-radius: 30%;
+}
+#First_Card{
+      margin: 5%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      padding: 50px;
+      padding-top: 25px;
+      box-shadow:-1px 1px 2px white;
+      width: 80%;
+}
+header{
+      position: relative;
+      width: 97%;
+      height: 80px;
+      display: flex;
+      padding-left: 20px;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow:-1px 1px 2px white;
+      justify-content: space-between;
+}
+#Home_Card{
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow:-1px 1px 2px white;
+      height: 520px;
+}
+
+#Part_Accueil{
+      display: flex;
+}
+
+#Menu_Contact{
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      height: 60px;
+      margin-top: 20px;
+}
+#Menu_Logo{
+      display: flex;
+      gap: 15px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 1s ease-out, opacity 0.5s ease;
+      opacity: 0;
+      justify-content: center;
+      align-items: center;
+}
+#Menu_Logo.show{
+      max-height: 100px;
+      opacity: 1;
+      padding: 10px;
+}
+.whatsapp{
+      transform: translateX(-100%);
+      transition: transform 0.8s ease;
+}
+.linkedin{
+      width: 45px;
+      height: 45px;
+      overflow: hidden;
+      transform: translateX(-340%);
+      transition: transform 0.8s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.email{
+      transform: translateX(-390%);
+      transition: transform 0.8s ease;
+}
+.github{
+      transform: translateX(-650%);
+      transition: transform 0.8s ease;
+}
+.email.derou,.github.derou,.linkedin.derou,.whatsapp.derou{
+      transform: translateX(0);
+}
+#Bouton{
+      background-color: #FFD700;
+      border-radius: 40px;
+      width: 100px;
+      height:60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline-color: white;
+      border: 2px white solid;
+}
+#Bouton:active{
+      transform: scale(0.9);
+}
+#Bouton p{
+      font-weight: bolder;
+}
+.Paragraph{
+      position: relative;
+      margin-left: 8%;
+      top: 150px;
+      height: 150px;
+      border-radius: 15px;
+      display: block;
+      align-content: center;
+}
+#Name{
+      font-weight: bolder;
+      font-size: 25px;
+}
+#Name1{
+      font-weight: bolder;
+      font-size: 20px;
+}
+.Salut{
+      font-weight: bolder;
+      font-size: 50px;
+}
+
+#Project_Card{
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow:-1px 1px 2px white;
+}
+#Pict_Area{
+      display: flex;
+      flex-wrap: wrap;
+}
+#Pict_Area div{
+      margin: 5px;
+      width: 310px;
+}
+#image1,#image2,#image3{
+      width: 300px;
+      height: 160px;
+      border-radius: 16px;
+      box-shadow:-1px 1px 2px white;
+}
+
+#About_Card{
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow:-1px 1px 2px white;
+}
+
+#Skill_Card{
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow:-1px 1px 2px white;
+}
+
+#Contact_Card{
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow:-1px 1px 2px white;
+}
+#Gendy{
+      border-radius: 16px;
+}
+#Gendy:hover{
+      transition-property: transform;
+      transition-duration: 1s;
+      transition-timing-function: ease;
+      transform: scale(1.4);
+}
+#logo{
+      display: flex;
+      width: 350px;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      align-items: center;
+}
+#logo div{
+      border-radius: 60px;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+      #Home_Card{
+            height: auto;
+      }
+      #First_Card{
+            margin: 0;
+            border-radius: 0px;
+            box-shadow: none;
+      }
+      #Part_Accueil{
+            display: block;
+            height: 600px;
+      }
+      #Ma_Photo{
+            display: block;
+            justify-self: center;
+            align-self: center;
+      }
+      .Paragraph{
+            height: 200px;
+            margin: 0;
+            top: 0;
+      }
+      #Pict_Area{
+            display: block;   
+      }
+      #Pict_Area div{
+            width: 98%;
+            max-width: 800px;
+      }
+      #image1,#image2,#image3{
+            height: 200px;
+      }
+      #Gendy{
+            width: 100%;
+            height: 200px;
+      }
+}
+@media screen and (max-width: 652px) and (min-width: 320px){
+      nav{
+            margin-right: 10px;
+      }
+}
+@media screen and (max-width: 549px) and (min-width: 320px){
+      nav{
+            width: 160px;
+      }
+}
+@media screen and (min-width: 865px){
+      nav{
+            justify-content: space-between;
+      }
+      nav p{
+            margin-left: 20px;
+      }
+}
