@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap');
+
+* {
+      margin: 0;
+      font-family: 'poppins', sans-serif;
+      color: #26B2C3;
+      text-orientation: upright;
+}
+
+body {
+      width: 100%;
+      background-color: #173053;
+}
+.Titre{
+      font-weight: bolder;
+      font-size: 30px;
+      justify-self: center;
+}
+section{
+      margin-top: 125px;
+}
+/*-------HEADER--------*/
+header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      background-color: #173053;
+      box-shadow: 0px -2px 5px white;
+}
+
+h1 {
+      margin-left: 10%;
+}
+
+nav {
+      width: 35%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 10%;
+}
+
+.IconMenu{
+      font-size: 40px;
+      color: white;
+      z-index: 2000;
+      position: fixed;
+      top: 20px;
+      right: 0;
+      margin-right: 10%;
+}
+
+#Menu{
+      display: none;
+}
+.MenuNav{
+      display: flex;
+      visibility: hidden;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: 20px;
+      right: 0;
+      margin-right: 10%;
+      width: 0px;
+      height: 0px;
+      z-index: 1000;
+      background-color: #17305325;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+}
+.MenuNav a{
+      text-decoration: none;
+      font-weight: bolder;
+}
+.MenuNav.visible{
+      visibility: visible;
+      opacity: 1;
+      width: 200px;
+      height: 200px;
+}
+nav a {
+      text-decoration: none;
+      font-weight: bolder;
+}
+
+nav a:hover {
+      text-decoration: underline;
+      text-decoration-color: #26B2C3;
+}
+
+#folio {
+      color: white;
+}
+
+/*-----------PARTIE ACCUEILLE--------*/
+
+h2 {
+      margin-bottom: 15px;
+      font-weight: bolder;
+      color: #26B2C3;
+}
+
+p {
+      color: white;
+}
+
+#Ma_Photo {
+      opacity: 0.9;
+      border-radius: 30%;
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+}
+
+
+#Home_Card {
+      margin-top: 25px;
+      border-radius: 20px;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#Part_Accueil {
+      display: flex;
+      justify-content: space-between;
+      padding: 10%;
+      padding-bottom: 0;
+      padding-top: 0;
+}
+
+
+#Menu_Contact {
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      height: 60px;
+      margin-top: 20px;
+      padding: 10%;
+      padding-top: 0;
+      padding-bottom: 50px;
+}
+
+#Menu_Logo {
+      display: flex;
+      gap: 15px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 1s ease-out, opacity 0.5s ease;
+      opacity: 0;
+      justify-content: center;
+      align-items: center;
+}
+
+#Menu_Logo.show {
+      max-height: 100px;
+      opacity: 1;
+      padding: 10px;
+}
+.Icons{
+      font-size: 50px;
+      color: white;
+}
+
+.whatsapp {
+      transform: translateX(-100%);
+      transition: transform 0.8s ease;
+}
+
+.linkedin {
+      transform: translateX(-340%);
+      transition: transform 0.8s ease;
+}
+
+.email {
+      transform: translateX(-390%);
+      transition: transform 0.8s ease;
+}
+
+.github {
+      transform: translateX(-650%);
+      transition: transform 0.8s ease;
+}
+
+.email.derou,
+.github.derou,
+.linkedin.derou,
+.whatsapp.derou {
+      transform: translateX(0);
+}
+
+#Bouton {
+      background-color: #26B2C3;
+      border-radius: 40px;
+      width: 100px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline-color: white;
+      border: 2px white solid;
+}
+
+#Bouton:active {
+      transform: scale(0.9);
+}
+
+#Bouton p {
+      font-weight: bolder;
+}
+
+.Paragraph {
+      position: relative;
+      width: 100%;
+      max-width: 35em;
+      height: auto;
+      align-content: center;
+}
+.Paragraph p{
+      text-align: justify;
+}
+
+#Name {
+      font-weight: bolder;
+      font-size: 25px
+}
+
+#Name1 {
+      font-weight: bolder;
+      font-size: 25px;
+}
+
+.Salut {
+      font-weight: bolder;
+      font-size: 50px;
+}
+
+/*--------PARTIE PROJET----------*/
+
+#Project_Card {
+      padding: 10%;
+      padding-top: 0;
+      padding-bottom: 50px;
+      margin-top: 25px;
+}
+#Project_Card{
+      text-align: center;
+}
+
+#Pict_Area {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+      margin-top: 50px;
+}
+#Projet1,#Projet2,#Projet3{
+      width: 100%;
+      max-width: 300px;
+      height: 350px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 2px white;
+      margin-bottom: 20px;
+      overflow: hidden;
+}
+#Projet1 img,#Projet2 img,#Projet3 img{
+      width: 100%;
+      height: 200px;
+}
+.text{
+      padding: 5%;
+}
+.text p{
+      text-align:start;
+}
+/*-------PARTIE COMPETENCE ------*/
+
+#Skill_Card {
+      margin-top: 25px;
+      padding: 10%;
+      padding-top: 0;
+      padding-bottom: 50px;
+}
+
+      /* ----BARRE DES COMPETENCE--- */
+
+.Conteneur {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+
+}
+
+.contenu1 {
+      display: flex;
+      border-radius: 8px;
+      flex-direction: column;
+      row-gap: 30px;
+      justify-content: center;
+      align-items: center;
+}
+
+.contenu2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      flex-direction: column;
+      row-gap: 30px;
+}
+.contenu3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      flex-direction: column;
+      row-gap: 30px;
+}
+
+.Bar_charge {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: conic-gradient(#26B2C3 3.6deg, rgb(194, 190, 190) 0deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px white solid;
+}
+
+.Bar_charge::before {
+      content: "";
+      width: 110px;
+      height: 110px;
+      background-color: #173053;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px white solid;
+}
+
+.progre_bar {
+      position: relative;
+}
+
+.Bar_charge2 {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: conic-gradient(#26B2C3 3.6deg, #173053 0deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px white solid;
+}
+
+.Bar_charge2::before {
+      content: "";
+      width: 110px;
+      height: 110px;
+      background-color: #173053;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px white solid;
+}
+
+.progre_bar2 {
+      position: relative;
+}
+.Bar_charge3 {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: conic-gradient(#26B2C3 3.6deg,#173053 0deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px white solid;
+}
+
+.Bar_charge3::before {
+      content: "";
+      width: 110px;
+      height: 110px;
+      background-color: #173053;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px white solid;
+}
+
+.progre_bar3 {
+      position: relative;
+}
+/*-------PARTiE A PROPOS DE MOI --------*/
+
+#About_Card {
+      margin-top: 25px;
+      padding: 10%;
+      padding-top: 0;
+      padding-bottom: 50px;
+}
+#About_Card p{
+      text-align: center;
+}
+
+/*-------PARTIE CONTACT--------*/
+
+#Contact_Card {
+      margin-top: 25px;
+      padding: 10%;
+      padding-top: 0;
+      padding-bottom: 50px;
+}
+
+#logo {
+      display: flex;
+      width: 350px;
+      flex-wrap: wrap;
+      justify-self: center;
+      justify-content: space-between;
+      align-items: center;
+}
+
+#logo div {
+      border-radius: 60px;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+/*---- ANIMATION ----*/
+.bloc {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 2s ease-out;
+}
+.bloc.vue {
+      transform: translateY(0);
+      opacity: 1;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 320px) { 
+      header {
+            width: 100%;
+      }
+
+      #Part_Accueil {
+            display: block;
+      }
+
+      #Ma_Photo {
+            display: block;
+            justify-self: center;
+            align-self: center;
+            width: auto;
+            max-width: 325px;
+      }
+
+      #Pict_Area {
+            display: block;
+      }
+
+      #Projet1,#Projet2,#Projet3{
+            justify-self: center;
+            align-self: center;
+      }
+      .Paragraph{
+            margin-top: 25px;
+            max-width: none;
+      }
+}
+@media screen and (max-width: 730px){
+      #Menu{
+            display: block;
+      }
+      nav{
+            display: none;
+      }
+}
